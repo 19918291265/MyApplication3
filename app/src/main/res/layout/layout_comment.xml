@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View  android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#4c4c4c"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="5条短评"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_1"
+            android:layout_marginLeft="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerView_short"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:paddingHorizontal="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="4条长评"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/recyclerView_short"
+            android:id="@+id/tv_2"
+            android:layout_marginLeft="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerView_long"
+            android:layout_below="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

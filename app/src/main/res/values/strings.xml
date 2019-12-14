@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">知乎日报</string>
+    <string name="url_show">"https://news-at.zhihu.com/api/3/story/#{9717889}"</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <com.example.myapplication3.RoundPicture.RoundPicture
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pic_30"
+        android:id="@+id/pic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pic"
+        android:id="@+id/name"
+        android:textStyle="bold"
+        android:text="121312321"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_below="@id/name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="121231"/>
+
+</RelativeLayout>

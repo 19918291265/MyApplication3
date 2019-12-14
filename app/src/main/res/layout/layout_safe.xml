@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhihu2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingHorizontal="32dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_1">
+            <EditText
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_circle"
+                android:layout_width="match_parent"
+                android:hint="输入原密码"
+                android:textSize="12dp"
+                android:paddingVertical="15dp"
+                android:paddingLeft="15dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_height="50dp"
+                android:maxLength = "10"
+                android:id="@+id/et_1"/>
+
+            <EditText
+                android:id="@+id/et_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_circle"
+                android:hint="新密码"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:paddingVertical="15dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_circle"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:paddingVertical="15dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_3"
+                android:paddingHorizontal="15dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/blue_button"
+                    android:layout_marginTop="9dp"
+                    android:text="修改密码"
+                    android:id="@+id/change"
+                    android:textColor="#fdfeff"
+                    android:textSize="11dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
